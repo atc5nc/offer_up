@@ -38,7 +38,11 @@
 
       <dt>Category</dt>
       <!-- Display category_id start -->
-      <dd><%= item.category_id %></dd>
+      <dd>
+        <% if @item.category.present? %>
+          <%= link_to item.category, item.category %>
+        <% end %>
+      </dd>
       <!-- Display category_id end -->
 
       <dt>Status</dt>
@@ -48,7 +52,11 @@
 
       <dt>Owner</dt>
       <!-- Display owner_id start -->
-      <dd><%= item.owner_id %></dd>
+      <dd>
+        <% if @item.owner.present? %>
+          <%= link_to item.owner, item.owner %>
+        <% end %>
+      </dd>
       <!-- Display owner_id end -->
 
     </dl>
