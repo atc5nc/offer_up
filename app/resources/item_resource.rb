@@ -13,6 +13,8 @@ class ItemResource < ApplicationResource
 
   # Direct associations
 
+  has_many   :comments
+
   belongs_to :owner,
              resource: UserResource
 
