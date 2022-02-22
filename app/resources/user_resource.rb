@@ -14,5 +14,4 @@ class UserResource < ApplicationResource
   has_many   :comments
 
   # Indirect associations
-
 end
